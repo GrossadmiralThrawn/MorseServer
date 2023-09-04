@@ -7,7 +7,7 @@
 
 
 
-ConnectionWiFi::ConnectionWiFi(ILED* giveILED): iLED(giveILED)
+ConnectionWiFi::ConnectionWiFi(ILED* giveILED): iLED(giveILED), server(7567) //Initialisierung der Servervariable auf Port 7567
 {
     // Konstruktor-Implementierung
 }
@@ -26,7 +26,7 @@ int ConnectionWiFi::scanForConnection()
 
 
 
-bool ConnectionWiFi::connect()
+bool ConnectionWiFi::connectToInternet()
 {
     if (scanForConnection() > 0)
     {
