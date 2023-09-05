@@ -17,6 +17,7 @@ class StandardLED: public ILED
         void shortSignal() override;
         void longSignal()  override;
         void loading()     override;
+        void error()       override;
 };
 
 

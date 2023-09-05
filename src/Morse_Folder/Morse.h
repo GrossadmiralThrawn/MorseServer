@@ -21,7 +21,7 @@ class Morse
 private:
     IConnection *iConnection;
     ILED        *iLED;
-    bool testSOS(std::string* __restrict data);
+    bool testSOS(String* __restrict data);
 };
 
 #endif  // Morse_h

@@ -16,7 +16,7 @@ class IConnection
         virtual bool        connectToInternet() = 0;
         virtual void        send()              = 0;
         virtual void        receive()           = 0;
-        virtual std::string getData()           = 0;
+        virtual String      getData()           = 0;
 };
 
 

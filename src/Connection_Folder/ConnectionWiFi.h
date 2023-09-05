@@ -23,7 +23,7 @@ class ConnectionWiFi: public IConnection
         int         scanForConnection() override;
         void        send()              override;
         void        receive()           override;
-        std::string getData()           override;
+        String      getData()           override;
 
 
 

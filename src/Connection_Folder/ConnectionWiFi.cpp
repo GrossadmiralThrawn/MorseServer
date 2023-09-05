@@ -9,7 +9,14 @@
 
 ConnectionWiFi::ConnectionWiFi(ILED* giveILED): iLED(giveILED), server(7567) //Initialisierung der Servervariable auf Port 7567
 {
-    this->receive();
+    if (connectToInternet)
+    {
+        this->receive();
+    }
+    else
+    {
+        giveILED->error();
+    }
 }
 
 
@@ -72,11 +79,7 @@ void ConnectionWiFi::receive()
 
 
 
-std::string ConnectionWiFi::getData()
+String ConnectionWiFi::getData()
 {
-    std::string parsedData = "SOS";
-
-
-
-    return parsedData;
+    return receivedData;
 }

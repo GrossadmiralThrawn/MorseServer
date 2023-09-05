@@ -26,7 +26,7 @@ void Morse::test() {
 
 
 
-bool Morse::testSOS(std::string* __restrict data)
+bool Morse::testSOS(String* __restrict data)
 {
     if (data->length() == 3 && ((*data)[0] == 'S'|| (*data)[0] == 's') && ((*data)[1] == 'O' || (*data)[1] == 'o') && ((*data)[2] == 'S' || (*data)[2] == 'o'))
     {
@@ -42,7 +42,7 @@ bool Morse::testSOS(std::string* __restrict data)
 
 void Morse::morse()
 {
-    std::string data = iConnection->getData();
+    String data = iConnection->getData();
 
 
     if (testSOS(&data))
