@@ -16,8 +16,8 @@ class Morse
         explicit Morse(IConnection *giveConnection, ILED *iLED);
                  ~Morse();
              
-            void     test();
-            void     morse();
+        void     test();
+        void     morse();
 private:
     IConnection *iConnection;
     ILED        *iLED;

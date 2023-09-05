@@ -9,7 +9,7 @@
 
 ConnectionWiFi::ConnectionWiFi(ILED* giveILED): iLED(giveILED), server(7567) //Initialisierung der Servervariable auf Port 7567
 {
-    // Konstruktor-Implementierung
+    this->receive();
 }
 
 
@@ -59,7 +59,14 @@ void ConnectionWiFi::send()
 
 void ConnectionWiFi::receive()
 {
-    // Implementierung der receive-Funktion
+    server.on("/", HTTP_POST, [this]() {
+        String receivedData = server.arg("data");
+        if (!receivedData.isEmpty()) {
+            this->receivedData = receivedData;
+        }
+        server.send(200, "text/plain", "Data received successfully");
+    });
+
 }
 
 

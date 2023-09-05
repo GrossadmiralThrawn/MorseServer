@@ -29,8 +29,9 @@ class ConnectionWiFi: public IConnection
 
 
     private:
-        const char *ssid     = "FRITZ!Box 7590 LO";
-        const char *password = "08791583302719586959";
+        const char  *ssid        = "FRITZ!Box 7590 LO";
+        const char  *password    = "08791583302719586959";
+        String      receivedData = "";
 };
 
 #endif
