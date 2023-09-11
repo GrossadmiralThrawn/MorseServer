@@ -6,7 +6,7 @@
 
 
 
-StandardLED    *standardLED = new StandardLED;
+StandardLED    *standardLED = new StandardLED();
 ConnectionWiFi *connection  = new ConnectionWiFi(standardLED);
 Morse          morse        = Morse(connection, standardLED);
 
@@ -14,13 +14,12 @@ Morse          morse        = Morse(connection, standardLED);
 
 
 void setup() {
-  // put your setup code here, to run once:
-  int result      = 0;
+  connection = new ConnectionWiFi(standardLED);
+  morse      =     Morse(connection, standardLED);
 }
 
 
 
 
 void loop() {
-  morse.morse();
 }

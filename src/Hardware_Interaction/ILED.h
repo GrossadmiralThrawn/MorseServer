@@ -10,6 +10,7 @@ class ILED
         virtual void shortSignal() = 0;
         virtual void longSignal()  = 0;
         virtual void loading()     = 0;
+        virtual void success()     = 0;
         virtual void error()       = 0;
 };
 

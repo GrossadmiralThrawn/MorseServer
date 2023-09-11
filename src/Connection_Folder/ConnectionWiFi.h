@@ -8,6 +8,7 @@
 #include <Hardware_Interaction/ILED.h>
 #include <WiFi.h>
 #include <WebServer.h>
+#include "Arduino.h"
 
 
 
@@ -17,9 +18,9 @@ class ConnectionWiFi: public IConnection
     public: 
         WebServer server; // Deklaration der server-Variable
         ILED*       iLED;
-        explicit    ConnectionWiFi(ILED* giveILED);                // Konstruktor-Deklaration
+        explicit    ConnectionWiFi(ILED* giveILED); // Konstruktor-Deklaration
                     ~ConnectionWiFi();
-        bool        connectToInternet() override;  // Überschreiben die virtuellen Funktionen
+        void        connectToInternet() override;   // Überschreiben die virtuellen Funktionen
         int         scanForConnection() override;
         void        send()              override;
         void        receive()           override;

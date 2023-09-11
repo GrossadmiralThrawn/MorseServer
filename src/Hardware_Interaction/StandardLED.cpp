@@ -68,6 +68,36 @@ void StandardLED::loading()
 
 void StandardLED::error()
 {
+        digitalWrite(LED_BUILTIN, HIGH);
+
+    delay(1500);
+
+    digitalWrite(LED_BUILTIN, LOW);
+
+    delay(1500);
+
+
+    digitalWrite(LED_BUILTIN, HIGH);
+
+    delay(1500);
+
+    digitalWrite(LED_BUILTIN, LOW);
+
+    delay(1500);
+
+
+    digitalWrite(LED_BUILTIN, HIGH);
+
+    delay(1500);
+
+    digitalWrite(LED_BUILTIN, LOW);  
+}
+
+
+
+
+void StandardLED::success()
+{
     digitalWrite(LED_BUILTIN, HIGH);
 
     delay(250);
