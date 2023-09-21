@@ -6,16 +6,17 @@
 
 
 
-StandardLED    *standardLED = new StandardLED();
-ConnectionWiFi *connection  = new ConnectionWiFi(standardLED);
-Morse          morse        = Morse(connection, standardLED);
+StandardLED    *standardLED;
+ConnectionWiFi *connection;
+Morse          morse         = Morse(connection, standardLED);
 
 
 
 
 void setup() {
-  connection = new ConnectionWiFi(standardLED);
-  morse      =     Morse(connection, standardLED);
+  standardLED = new StandardLED();
+  connection  = new ConnectionWiFi(standardLED);
+  morse       =     Morse(connection, standardLED);
 }
 
 
