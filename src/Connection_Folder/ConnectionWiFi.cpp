@@ -21,7 +21,7 @@ ConnectionWiFi::ConnectionWiFi(ILED* giveILED): iLED(giveILED), server(7567) //I
 
     if (connectionSuccessed)
     {
-        this->receive(); //Fängt an Daten zu empfangen, wenn die Verbindung erfolgreich aufgebaut werden konnte.
+        this->iLED->success(); //Fängt an Daten zu empfangen, wenn die Verbindung erfolgreich aufgebaut werden konnte.
     }
     else
     {
@@ -57,7 +57,6 @@ void ConnectionWiFi::connectToInternet()
         }
         
 
-        iLED->success();
         connectionSuccessed = true;
     }
     else

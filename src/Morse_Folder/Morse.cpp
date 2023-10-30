@@ -4,7 +4,7 @@
 
 
 
-Morse::Morse(IConnection *giveConnection, ILED *iLED): iConnection(giveConnection), iLED(iLED)
+Morse::Morse(IConnection *givenConnection, ILED *iLED): iConnection(givenConnection), iLED(iLED)
 {
 }
 
@@ -61,9 +61,160 @@ void Morse::morse()
         iLED->shortSignal();
         iLED->shortSignal();
     }
-    else
-    {
-        
-    }
-    
 }
+
+
+
+
+void printA()
+{}
+
+
+
+
+void printB()
+{}
+
+
+
+
+void printC()
+{}
+
+
+
+
+void printD()
+{}
+
+
+
+
+void printE()
+{}
+
+
+
+
+void printF()
+{}
+
+
+
+
+void printG()
+{}
+
+
+
+
+void printH()
+{}
+
+
+
+
+void printI()
+{}
+
+
+
+
+void printJ()
+{}
+
+
+
+
+void printK()
+{}
+
+
+
+
+void printL()
+{}
+
+
+
+
+void printM()
+{}
+
+
+
+
+void printN()
+{}
+
+
+
+
+void printO()
+{}
+
+
+
+
+void printP()
+{}
+
+
+
+
+void printQ()
+{}
+
+
+
+
+void printR()
+{}
+
+
+
+
+void printS()
+{}
+
+
+
+
+void printT()
+{}
+
+
+
+
+void printU()
+{}
+
+
+
+
+void printV()
+{}
+
+
+
+
+void printW()
+{}
+
+
+
+
+void printX()
+{}
+
+
+
+
+void printY()
+{}
+
+
+
+
+void printZ()
+{}

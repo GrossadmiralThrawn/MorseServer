@@ -20,11 +20,11 @@ class ConnectionWiFi: public IConnection
         ILED*       iLED;
         explicit    ConnectionWiFi(ILED* giveILED); // Konstruktor-Deklaration
                     ~ConnectionWiFi();
-        void        connectToInternet() override;   // Überschreiben die virtuellen Funktionen
-        int         scanForConnection() override;
-        void        send()              override;
-        void        receive()           override;
-        String      getData()           override;
+        void        connectToInternet()    override;   // Überschreiben die virtuellen Funktionen
+        int         scanForConnection()    override;
+        void        send()                 override;
+        void        receive()              override;
+        String      getData()              override;
 
 
 
